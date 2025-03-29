@@ -1,5 +1,17 @@
 ### Dependencies
 
+## 1.12.0
+
+### Minor Changes
+
+- c2ae23e: Backstage version bump to v1.36.1
+
+## 1.11.2
+
+### Patch Changes
+
+- bea2321: remove unused dependencies: @material-ui/lab and @types/node
+
 ## 1.11.1
 
 ### Patch Changes

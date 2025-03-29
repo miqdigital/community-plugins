@@ -1,5 +1,18 @@
 ### Dependencies
 
+## 2.0.0
+
+### Major Changes
+
+- 215f3c6: **BREAKING** Use Kubernetes plugin permissions `kubernetes.clusters.read` and `kubernetes.resources.read` in Topology plugin, remove topology-specific permission `topology.view.read`.
+  If you are importing `topologyViewPermission` or `topologyPermissions` from `@backstage-community/plugin-topology-common`, the imports need to be updated to instead import from `@backstage/plugin-kubernetes-common`.
+
+## 1.33.1
+
+### Patch Changes
+
+- 1a6414e: remove unused dependency: @types/node
+
 ## 1.33.0
 
 ### Minor Changes
