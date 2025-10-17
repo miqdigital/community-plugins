@@ -14,11 +14,23 @@
  * limitations under the License.
  */
 
-import { getAnnotationValuesFromEntity as getAnnotationValuesFromEntityCommon } from '@backstage-community/plugin-azure-devops-common';
+import { useRef } from 'react';
 
-/**
- * @public
- * @deprecated Import this from `@backstage-community/plugin-azure-devops-common` instead
- */
-export const getAnnotationValuesFromEntity =
-  getAnnotationValuesFromEntityCommon;
+import { isEqual } from 'lodash';
+
+export const useDeepCompareMemoize = <T = any>(
+  value: T,
+  stringify?: boolean,
+): T => {
+  const ref = useRef<T>();
+
+  if (
+    stringify
+      ? JSON.stringify(value) !== JSON.stringify(ref.current)
+      : !isEqual(value, ref.current)
+  ) {
+    ref.current = value;
+  }
+
+  return ref.current as T;
+};
