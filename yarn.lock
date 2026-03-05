@@ -2077,8 +2077,8 @@ __metadata:
   linkType: hard
 
 "@backstage/integration@npm:^1.17.0, @backstage/integration@npm:^1.20.0":
-  version: 1.20.0
-  resolution: "@backstage/integration@npm:1.20.0"
+  version: 1.20.1
+  resolution: "@backstage/integration@npm:1.20.1"
   dependencies:
     "@azure/identity": "npm:^4.0.0"
     "@azure/storage-blob": "npm:^12.5.0"
@@ -2090,7 +2090,7 @@ __metadata:
     git-url-parse: "npm:^15.0.0"
     lodash: "npm:^4.17.21"
     luxon: "npm:^3.0.0"
-  checksum: 10/c790383e5c38fde4aa80dd9e39e762b059b17af04a7175f96c62b1fcd705a59da6092238cbbcd7da1d91b44e80e6d82ed52d228b0bb3eb98936f292d75eb7aae
+  checksum: 10/7089debe4190b39a35751438daa4fca79fcaa4c679889b983ba626f568aee6412f1180e58ff08111ee07b365a80712efc5abf5042af86cd3645a1cce66e63a72
   languageName: node
   linkType: hard
 
