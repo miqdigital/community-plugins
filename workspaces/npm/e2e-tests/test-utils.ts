@@ -1,5 +1,5 @@
 /*
- * Copyright 2024 The Backstage Authors
+ * Copyright 2026 The Backstage Authors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,22 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import {
-  ScmIntegrationsApi,
-  scmIntegrationsApiRef,
-  ScmAuth,
-} from '@backstage/integration-react';
-import {
-  AnyApiFactory,
-  configApiRef,
-  createApiFactory,
-} from '@backstage/core-plugin-api';
 
-export const apis: AnyApiFactory[] = [
-  createApiFactory({
-    api: scmIntegrationsApiRef,
-    deps: { configApi: configApiRef },
-    factory: ({ configApi }) => ScmIntegrationsApi.fromConfig(configApi),
-  }),
-  ScmAuth.createDefaultApiFactory(),
-];
+import { Page } from '@playwright/test';
+
+export async function skipLoginIfPresent(page: Page) {
+  if (await page.getByText('Select a sign-in method').isVisible()) {
+    page.once('dialog', async dialog => {
+      await dialog.accept();
+    });
+    await page.getByRole('button', { name: 'Enter' }).click();
+  }
+}
+
+export async function navigateToCatalogIfPresent(page: Page) {
+  if (await page.getByRole('link', { name: 'Catalog' }).isVisible()) {
+    await page.getByRole('link', { name: 'Catalog' }).click();
+  }
+}

@@ -1,5 +1,5 @@
 /*
- * Copyright 2024 The Backstage Authors
+ * Copyright 2025 The Backstage Authors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,4 +13,27 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import '@testing-library/jest-dom';
+
+import { Entity } from '@backstage/catalog-model';
+
+// Same as examples/npmjs-examples.yaml
+
+export const npmjsExamples: Entity[] = [
+  {
+    apiVersion: 'backstage.io/v1alpha1',
+    kind: 'Component',
+    metadata: {
+      name: 'backstage-ui',
+      annotations: {
+        'npm/package': '@backstage/ui',
+        'npm/show-tags': 'latest, next',
+      },
+    },
+    spec: {
+      type: 'library',
+      lifecycle: 'production',
+      owner: 'backstage',
+      system: 'backstage',
+    },
+  },
+];
