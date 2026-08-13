@@ -1853,7 +1853,7 @@ __metadata:
     cross-fetch: "npm:4.1.0"
     git-url-parse: "npm:^13.1.0"
     glob: "npm:^13.0.0"
-    js-yaml: "npm:^4.1.0"
+    js-yaml: "npm:^5.2.1"
     lodash: "npm:^4.17.21"
     mobx-react: "npm:^7.6.0"
     react: "npm:^18.3.1"
@@ -20052,6 +20052,17 @@ __metadata:
   bin:
     js-yaml: bin/js-yaml.js
   checksum: 10/2ce71b5d632abbd77da80447bf860e8a0264e54bffe94840984887d58b023761495b523727547904517a6107a1ef189854b361e0fc44995ee13a84f222d7bd42
+  languageName: node
+  linkType: hard
+
+"js-yaml@npm:^5.2.1":
+  version: 5.2.1
+  resolution: "js-yaml@npm:5.2.1"
+  dependencies:
+    argparse: "npm:^2.0.1"
+  bin:
+    js-yaml: bin/js-yaml.mjs
+  checksum: 10/e1eca2d21c15572585bb236d9fde31d6789eb50b9c63e8753fa7e0777bc480f7521cad517bd7a0c66f27dfc27ddcd7100beeefa51c1a50e10e98f2e009633c3d
   languageName: node
   linkType: hard
 
