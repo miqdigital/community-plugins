@@ -40,7 +40,7 @@
     "@mui/icons-material": "^5.15.18",
     "@mui/material": "^5.15.18",
     "@one-platform/opc-feedback": "0.2.3-alpha",
-    "axios": "^1.6.4",
+    "axios": "^1.20.0",
     "luxon": "^3.5.0",
     "react-use": "^17.6.0"
   },
