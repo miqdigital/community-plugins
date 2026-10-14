@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "@backstage-community/plugin-feedback-common": "workspace:^",
-    "@backstage/backend-defaults": "^0.17.1",
+    "@backstage/backend-defaults": "^0.17.8",
     "@backstage/backend-dynamic-feature-service": "^0.8.2",
     "@backstage/backend-plugin-api": "^1.9.1",
     "@backstage/backend-test-utils": "^1.11.3",
