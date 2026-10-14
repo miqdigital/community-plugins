@@ -51,7 +51,7 @@
     "@backstage/cli": "^0.36.3",
     "@backstage/plugin-auth-backend": "^0.29.1",
     "@backstage/plugin-auth-backend-module-guest-provider": "^0.2.20",
-    "@backstage/plugin-catalog-backend": "^3.8.0",
+    "@backstage/plugin-catalog-backend": "^3.9.1",
     "@types/supertest": "^7.0.0",
     "supertest": "^7.0.0"
   },
