@@ -1883,7 +1883,7 @@ __metadata:
     "@backstage/config": "npm:^1.3.6"
     "@backstage/plugin-auth-backend": "npm:^0.27.3"
     "@backstage/plugin-auth-backend-module-guest-provider": "npm:^0.2.17"
-    "@backstage/plugin-auth-node": "npm:^0.6.14"
+    "@backstage/plugin-auth-node": "npm:^0.6.15"
     "@backstage/plugin-catalog-node": "npm:^2.1.0"
     "@types/express": "npm:*"
     "@types/supertest": "npm:^7.0.0"
@@ -3530,6 +3530,29 @@ __metadata:
     zod-to-json-schema: "npm:^3.25.1"
     zod-validation-error: "npm:^4.0.2"
   checksum: 10/40b956e4feefce6955168d2800cc0942058a3e842ad891e22748a50f2886aae765a70aa72591dac05b0215b586d65139633bfbe39c6dd2c06bc6cbee699935aa
+  languageName: node
+  linkType: hard
+
+"@backstage/plugin-auth-node@npm:^0.6.15":
+  version: 0.6.15
+  resolution: "@backstage/plugin-auth-node@npm:0.6.15"
+  dependencies:
+    "@backstage/backend-plugin-api": "npm:^1.8.0"
+    "@backstage/catalog-client": "npm:^1.14.0"
+    "@backstage/catalog-model": "npm:^1.7.7"
+    "@backstage/config": "npm:^1.3.6"
+    "@backstage/errors": "npm:^1.2.7"
+    "@backstage/types": "npm:^1.2.2"
+    "@types/express": "npm:^4.17.6"
+    "@types/passport": "npm:^1.0.3"
+    express: "npm:^4.22.0"
+    jose: "npm:^5.0.0"
+    lodash: "npm:^4.17.21"
+    passport: "npm:^0.7.0"
+    zod: "npm:^3.25.76 || ^4.0.0"
+    zod-to-json-schema: "npm:^3.25.1"
+    zod-validation-error: "npm:^4.0.2"
+  checksum: 10/ce1643c91eda7536ecc47e0240203fd1789606784a50c67a4b098296d675dc0b951fd62e00322a5f1c2295bff3c2db5ea1c25c5ac1c7ecf8a002fe94030eef02
   languageName: node
   linkType: hard
 
@@ -15049,7 +15072,7 @@ __metadata:
     "@backstage/plugin-auth-backend": "npm:^0.27.3"
     "@backstage/plugin-auth-backend-module-github-provider": "npm:^0.5.1"
     "@backstage/plugin-auth-backend-module-guest-provider": "npm:^0.2.17"
-    "@backstage/plugin-auth-node": "npm:^0.6.14"
+    "@backstage/plugin-auth-node": "npm:^0.6.15"
     "@backstage/plugin-catalog-backend": "npm:^3.5.0"
     "@backstage/plugin-catalog-backend-module-scaffolder-entity-model": "npm:^0.2.18"
     "@backstage/plugin-permission-backend": "npm:^0.7.10"
